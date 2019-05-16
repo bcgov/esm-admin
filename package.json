@@ -49,7 +49,7 @@
     "mongoose": "4.6.6",
     "morgan": "^1.6.1",
     "multer": "0.1.8",
-    "node-pre-gyp": "0.6.4",
+    "node-pre-gyp": "0.6.15",
     "nodemailer": "^2.3.2",
     "passport": "~0.2.2",
     "passport-github": "~0.1.5",
