@@ -16,7 +16,9 @@
   "scripts": {
     "test": "grunt test",
     "build": "grunt buildprod",
-    "postinstall": "git config --global url.https://.insteadOf git:// && bower install --config.interactive=false --allow-root && grunt buildprod"
+    "postinstall": "git config --global url.https://.insteadOf git:// && bower install --config.interactive=false --allow-root && grunt buildprod",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "acl": "~0.4.4",
@@ -64,7 +66,8 @@
     "tiny-jsonrpc": "~0.2.1",
     "tree-model": "^1.0.6",
     "uid-safe": "2.0.0",
-    "validator": "^3.41.2"
+    "validator": "^3.41.2",
+    "snyk": "^1.192.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.4",
@@ -95,5 +98,6 @@
     "run-sequence": "^1.1.1",
     "should": "^7.0.1",
     "supertest": "^1.0.1"
-  }
+  },
+  "snyk": true
 }
